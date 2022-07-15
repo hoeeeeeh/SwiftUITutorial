@@ -16,6 +16,8 @@ struct LandmarkList: View {
         }
     }
     
+
+    
     var body: some View {
         NavigationView{
             List(filteredLandmarks){ landmark in
