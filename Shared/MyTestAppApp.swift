@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MyTestAppApp: App {
+    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
-        WindowGroup {
+        WindowGroup{
             ContentView()
+                .environmentObject(modelData)
         }
     }
 }
